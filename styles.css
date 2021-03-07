@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.right-side {
+    display: flex;
+}
+
+.nav > .left-side > div {
+    font-size: 1rem;
+
+}
+
+.nav > .right-side > div{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.link__nav {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.link__nav a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.link__nav:hover {
+    border-bottom: 1px solid black;
+  }
+
+.link__nav a:hover{
+    color: black;
+}
