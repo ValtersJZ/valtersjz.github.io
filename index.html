@@ -23,5 +23,61 @@
             </div>
         </div>
     </nav>
+
+    <div class="content">
+        <div class="post_list">
+            <div class="post-abstract">
+                <div class="img-background__post-abstract" style="background-image: url(images/winter_flower.jpg);"></div>
+                <div class="img-text__post-abstract">
+                    <div class="logo-wrapper__post-abstract">
+                        <img src="images/logo.svg.png">
+                    </div>
+                    <div class="subtitle__post-abstract">
+                        Lorem ipsum
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-abstract">
+                <div class="img-background__post-abstract" style="background-image: url(images/winter_flower.jpg);"></div>
+                <div class="img-text__post-abstract">
+                    <div class="logo-wrapper__post-abstract">
+                        <img src="images/logo.svg.png">
+                    </div>
+                    <div class="subtitle__post-abstract">
+                        Lorem ipsum
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-abstract">
+                <div class="img-background__post-abstract" style="background-image: url(images/winter_flower.jpg);"></div>
+                <div class="img-text__post-abstract">
+                    <div class="logo-wrapper__post-abstract">
+                        <img src="images/logo.svg.png">
+                    </div>
+                    <div class="subtitle__post-abstract">
+                        Lorem ipsum
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
+
+<script>
+    const postList = document.querySelectorAll('.post-abstract')
+
+    postList.forEach(post => {
+        post.addEventListener('mouseover', () => {
+            post.childNodes[1].classList.add('img-darken')
+        })
+
+        post.addEventListener('mouseout', () => {
+            post.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+
 </html>
